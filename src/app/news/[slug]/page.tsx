@@ -15,9 +15,8 @@ type Props = {
 };
 
 // Generate metadata for the page
-export async function generateMetadata(
-  { params }: Props
-): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   try {
     const post = await getPostBySlug(params.slug);
 
@@ -35,7 +34,8 @@ export async function generateMetadata(
 }
 
 // The main page component
-export default async function PostPage({ params }: Props) {
+export default async function PostPage(props: Props) {
+  const params = await props.params;
   try {
     const post = await getPostBySlug(params.slug);
 
