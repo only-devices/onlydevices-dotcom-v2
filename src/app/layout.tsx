@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { GoogleTagManager } from '@next/third-parties/google'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import '@/styles/globals.css'
@@ -15,6 +16,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-MFWNQB3';
+
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
@@ -25,6 +28,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <GoogleTagManager gtmId={gtmId} />
       </body>
     </html>
   )

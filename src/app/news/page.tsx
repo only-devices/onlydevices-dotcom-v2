@@ -33,7 +33,6 @@ export default async function NewsPage() {
             <ContentCard
               key={post.id}
               title={post.title}
-              description={post.description}
               slug={post.slug}
               publishedAt={post.publishedAt}
               coverImage={post.coverImage}

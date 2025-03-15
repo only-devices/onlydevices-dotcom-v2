@@ -5,7 +5,7 @@ import { formatDistance } from 'date-fns'
 
 interface ContentCardProps {
   title: string
-  description: string
+  description?: string
   slug: string
   publishedAt: Date
   author: string

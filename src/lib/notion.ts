@@ -84,7 +84,7 @@ export const getNotionPosts = cache(async (): Promise<Post[]> => {
         
         return {
           id: page.id,
-          title: getTextFromProperty(props.title),
+          title: getTextFromProperty(props.Title),
           description: getTextFromProperty(props.Description),
           slug: getTextFromProperty(props.Slug),
           publishedAt: getDateFromProperty(props.Published),
