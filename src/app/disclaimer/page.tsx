@@ -8,7 +8,7 @@ export default function DisclaimerPage() {
             In case you haven&apos;t noticed, Only Devices isn&apos;t a real company. It&apos;s not even really a real anything at this point. I&apos;d like it to become a music project, but in the meantime I just made a sarcastic fake SaaS company website with it.
           </p>
           <p className="text-lg mb-6">
-            Check out my personal website for some more snarky humor: <a href="https://tuovila.com" className="text-blue-600 hover:text-blue-800">tuovila.com</a>
+            Check out my personal website for some more snarky humor: <a href="https://www.tuovila.com" className="text-blue-600 hover:text-blue-800">tuovila.com</a>
           </p>
         </div>
       </div>
